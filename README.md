@@ -35,3 +35,7 @@ Exemple : ./creation_logs.sh 10pts 10 2
     	2.2 Permet de charger un fichier contenant des Kppv.
     	2.3 Donne la possibilité de supprimer le dernier point ajouté.
     	2.4 Permet de sauvegarder sa configuration de points dans un fichier nommé : save.txt
+
+Répartition du travail :
+	90% -- YILDIZ Tolga
+	10% -- Anaïs Roche
