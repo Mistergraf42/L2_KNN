@@ -1,0 +1,531 @@
+\doxysection{heads/fonction.h File Reference}
+\hypertarget{fonction_8h}{}\label{fonction_8h}\index{heads/fonction.h@{heads/fonction.h}}
+
+
+Fichier contenant le prototype des fonctions.  
+
+
+{\ttfamily \#include \"{}type.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fonction_8h_a92f687a3f92a1a4c08674346d0e5f8d4}{bouton\+\_\+on}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Crée un bouton avec un carré noir rempli et un carré violet au centre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_ac232f71ef3781f6ca97d1b1e1b70677e}{bouton\+\_\+off}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Crée un bouton avec un carré noir rempli. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_ae44616c5504441880d598b8043ec1193}{selection\+\_\+on\+\_\+off}} (int \texorpdfstring{$\ast$}{*}mode, int x, int y)
+\begin{DoxyCompactList}\small\item\em Permet de changer l\textquotesingle{}état d\textquotesingle{}un bouton. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a39f2a93444f4752ba9e76fd33361fc30}{affichage}} (int \texorpdfstring{$\ast$}{*}bouton\+\_\+1, int \texorpdfstring{$\ast$}{*}bouton\+\_\+2, int \texorpdfstring{$\ast$}{*}bouton\+\_\+3, int \texorpdfstring{$\ast$}{*}bouton\+\_\+4)
+\begin{DoxyCompactList}\small\item\em Affichage principal de la fenêtre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a8881f5e1231752e16504e8e1ec86d37b}{chargement\+\_\+fichier}} (char \texorpdfstring{$\ast$}{*}name, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}adresse\+\_\+tab, int \texorpdfstring{$\ast$}{*}n, int \texorpdfstring{$\ast$}{*}d, int \texorpdfstring{$\ast$}{*}c)
+\begin{DoxyCompactList}\small\item\em Chargement d\textquotesingle{}un fichier et met les données dans un tableau de point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{fonction_8h_afddd2a384ce3d2a3c73d6b3e60ca910b}{chargement\+\_\+fichier\+\_\+bis}} (char \texorpdfstring{$\ast$}{*}name, int \texorpdfstring{$\ast$}{*}accu)
+\begin{DoxyCompactList}\small\item\em Chargement d\textquotesingle{}un fichier et rentre les données dans un tableau de sauvegarde de type save. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{fonction_8h_addb48b2e8edf3d2598eba897f5b521cf}{chargement\+\_\+fichier\+\_\+point}} (char \texorpdfstring{$\ast$}{*}name, int \texorpdfstring{$\ast$}{*}accu)
+\begin{DoxyCompactList}\small\item\em Charge un fichier et renvoie un tableau de point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a6d221259ef1deee2789af95a41e8825f}{Affiche\+\_\+point}} (int n, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet d\textquotesingle{}afficher les points du tableau de point en fonction de la classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_aba2916e91afefba9e00a69c9c8634ba7}{Affiche\+\_\+save}} (int n, \mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}tab)
+\begin{DoxyCompactList}\small\item\em Permet d\textquotesingle{}afficher les points du tableau de sauvegarde en fonction de la classe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a8eda120a3e093367ad943ebd4f4793a5}{mode\+\_\+crea}} (char \texorpdfstring{$\ast$}{*}nomfichier, int \texorpdfstring{$\ast$}{*}classeselection)
+\begin{DoxyCompactList}\small\item\em Interface graphique pour le mode creation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_aa41397ad8c9106d8fba552f40c1a8ab3}{chargement\+\_\+fichier\+\_\+bouton}} (char \texorpdfstring{$\ast$}{*}nomfichier, int \texorpdfstring{$\ast$}{*}bouton\+\_\+1, int \texorpdfstring{$\ast$}{*}bouton\+\_\+2, int \texorpdfstring{$\ast$}{*}bouton\+\_\+3, int \texorpdfstring{$\ast$}{*}bouton\+\_\+4, int \texorpdfstring{$\ast$}{*}classeselection, \mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}ANAIS, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}TOONS, \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \texorpdfstring{$\ast$}{*}TOLGA, int \texorpdfstring{$\ast$}{*}accu)
+\begin{DoxyCompactList}\small\item\em Menu permettant de charger un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a679e5bf04f8ec3bde83eba475763f3ee}{classe\+\_\+changement}} (int \texorpdfstring{$\ast$}{*}classe)
+\begin{DoxyCompactList}\small\item\em Permet de changer la classe selectionnée (entre 1 et 2) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a4b2b8df23968d664f4cd65c454f1639a}{update\+\_\+classe}} (int \texorpdfstring{$\ast$}{*}classeselection)
+\begin{DoxyCompactList}\small\item\em Affichage de la classe selectionnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_ad4c3882624b63447a0069897d0a2b1b8}{k\+\_\+changement}} (int \texorpdfstring{$\ast$}{*}kselection)
+\begin{DoxyCompactList}\small\item\em Permet de changer le nombre de voisins proches. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_a365186cbf4585aabeffcfcd0718c2992}{update\+\_\+k}} (int \texorpdfstring{$\ast$}{*}kselection)
+\begin{DoxyCompactList}\small\item\em Affichage de la valeur de k. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fonction_8h_ae38d2df17e7a9c2c4b4db75623415c7f}{supprimer\+\_\+dernier\+\_\+point}} (int n, \mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}sauvegarde)
+\begin{DoxyCompactList}\small\item\em Permet de supprimer le dernier point et de faire l\textquotesingle{}affichage sans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichier contenant le prototype des fonctions. 
+
+\begin{DoxyAuthor}{Author}
+ANAIS ROCHE -\/ TOLGA YILDIZ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{fonction_8h_a39f2a93444f4752ba9e76fd33361fc30}\label{fonction_8h_a39f2a93444f4752ba9e76fd33361fc30} 
+\index{fonction.h@{fonction.h}!affichage@{affichage}}
+\index{affichage@{affichage}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{affichage()}{affichage()}}
+{\footnotesize\ttfamily void affichage (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+1,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+2,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+3,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+4 }\end{DoxyParamCaption})}
+
+
+
+Affichage principal de la fenêtre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bouton\+\_\+1} & Bouton voisinage \\
+\hline
+{\em bouton\+\_\+2} & Bouton voisinage avec prise de décision \\
+\hline
+{\em bouton\+\_\+3} & Bouton voisinage arbre \\
+\hline
+{\em bouton\+\_\+4} & Bouton voisinage arbre avec prise de décision\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em bouton\+\_\+1} & Bouton voisinage \\
+\hline
+{\em bouton\+\_\+2} & Bouton voisinage avec prise de décision \\
+\hline
+{\em bouton\+\_\+3} & Bouton voisinage arbre \\
+\hline
+{\em bouton\+\_\+4} & Bouton voisinage arbre avec prise de décision \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_a6d221259ef1deee2789af95a41e8825f}\label{fonction_8h_a6d221259ef1deee2789af95a41e8825f} 
+\index{fonction.h@{fonction.h}!Affiche\_point@{Affiche\_point}}
+\index{Affiche\_point@{Affiche\_point}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{Affiche\_point()}{Affiche\_point()}}
+{\footnotesize\ttfamily void Affiche\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{tab }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet d\textquotesingle{}afficher les points du tableau de point en fonction de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nombre de point \\
+\hline
+{\em tab} & tableau de point\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nombre de point \\
+\hline
+{\em tab} & tableau de point \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_aba2916e91afefba9e00a69c9c8634ba7}\label{fonction_8h_aba2916e91afefba9e00a69c9c8634ba7} 
+\index{fonction.h@{fonction.h}!Affiche\_save@{Affiche\_save}}
+\index{Affiche\_save@{Affiche\_save}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{Affiche\_save()}{Affiche\_save()}}
+{\footnotesize\ttfamily void Affiche\+\_\+save (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}}]{tab }\end{DoxyParamCaption})}
+
+
+
+Permet d\textquotesingle{}afficher les points du tableau de sauvegarde en fonction de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nombre de point \\
+\hline
+{\em tab} & tableau de save\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nombre de point \\
+\hline
+{\em tab} & tableau de save \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_ac232f71ef3781f6ca97d1b1e1b70677e}\label{fonction_8h_ac232f71ef3781f6ca97d1b1e1b70677e} 
+\index{fonction.h@{fonction.h}!bouton\_off@{bouton\_off}}
+\index{bouton\_off@{bouton\_off}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{bouton\_off()}{bouton\_off()}}
+{\footnotesize\ttfamily void bouton\+\_\+off (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Crée un bouton avec un carré noir rempli. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_a92f687a3f92a1a4c08674346d0e5f8d4}\label{fonction_8h_a92f687a3f92a1a4c08674346d0e5f8d4} 
+\index{fonction.h@{fonction.h}!bouton\_on@{bouton\_on}}
+\index{bouton\_on@{bouton\_on}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{bouton\_on()}{bouton\_on()}}
+{\footnotesize\ttfamily void bouton\+\_\+on (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Crée un bouton avec un carré noir rempli et un carré violet au centre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_a8881f5e1231752e16504e8e1ec86d37b}\label{fonction_8h_a8881f5e1231752e16504e8e1ec86d37b} 
+\index{fonction.h@{fonction.h}!chargement\_fichier@{chargement\_fichier}}
+\index{chargement\_fichier@{chargement\_fichier}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fichier()}{chargement\_fichier()}}
+{\footnotesize\ttfamily void chargement\+\_\+fichier (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{adresse\+\_\+tab,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n,  }\item[{int \texorpdfstring{$\ast$}{*}}]{d,  }\item[{int \texorpdfstring{$\ast$}{*}}]{c }\end{DoxyParamCaption})}
+
+
+
+Chargement d\textquotesingle{}un fichier et met les données dans un tableau de point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier à charger \\
+\hline
+{\em adresse\+\_\+tab} & le tableau de point qui va être rempli \\
+\hline
+{\em n} & nombre de point dans le fichier \\
+\hline
+{\em d} & dimension ici fixée à 2 \\
+\hline
+{\em c} & les classes\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier à charger \\
+\hline
+{\em adresse\+\_\+tab} & le tableau de point qui va être rempli \\
+\hline
+{\em n} & nombre de point dans le fichier \\
+\hline
+{\em d} & dimension ici fixée à 2 \\
+\hline
+{\em c} & les classes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_afddd2a384ce3d2a3c73d6b3e60ca910b}\label{fonction_8h_afddd2a384ce3d2a3c73d6b3e60ca910b} 
+\index{fonction.h@{fonction.h}!chargement\_fichier\_bis@{chargement\_fichier\_bis}}
+\index{chargement\_fichier\_bis@{chargement\_fichier\_bis}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fichier\_bis()}{chargement\_fichier\_bis()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*} chargement\+\_\+fichier\+\_\+bis (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{int \texorpdfstring{$\ast$}{*}}]{accu }\end{DoxyParamCaption})}
+
+
+
+Chargement d\textquotesingle{}un fichier et rentre les données dans un tableau de sauvegarde de type save. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier à charger \\
+\hline
+{\em accu} & nombre de point dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+save\texorpdfstring{$\ast$}{*}
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier à charger \\
+\hline
+{\em accu} & nombre de point dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+save\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{fonction_8h_aa41397ad8c9106d8fba552f40c1a8ab3}\label{fonction_8h_aa41397ad8c9106d8fba552f40c1a8ab3} 
+\index{fonction.h@{fonction.h}!chargement\_fichier\_bouton@{chargement\_fichier\_bouton}}
+\index{chargement\_fichier\_bouton@{chargement\_fichier\_bouton}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fichier\_bouton()}{chargement\_fichier\_bouton()}}
+{\footnotesize\ttfamily void chargement\+\_\+fichier\+\_\+bouton (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nomfichier,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+1,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+2,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+3,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+4,  }\item[{int \texorpdfstring{$\ast$}{*}}]{classeselection,  }\item[{\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{ANAIS,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{TOONS,  }\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \texorpdfstring{$\ast$}{*}}]{TOLGA,  }\item[{int \texorpdfstring{$\ast$}{*}}]{accu }\end{DoxyParamCaption})}
+
+
+
+Menu permettant de charger un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomfichier} & Le fichier à charger \\
+\hline
+{\em bouton\+\_\+1} & état du bouton 1 \\
+\hline
+{\em bouton\+\_\+2} & état du bouton 2 \\
+\hline
+{\em bouton\+\_\+3} & état du bouton 3 \\
+\hline
+{\em bouton\+\_\+4} & état du bouton 4 \\
+\hline
+{\em classeselection} & la classe selectionnée \\
+\hline
+{\em ANAIS} & tableau de save \\
+\hline
+{\em TOONS} & tableau de point \\
+\hline
+{\em TOLGA} & arbre kd \\
+\hline
+{\em accu} & nombre de point\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomfichier} & Le fichier à charger \\
+\hline
+{\em bouton\+\_\+1} & état du bouton 1 \\
+\hline
+{\em bouton\+\_\+2} & état du bouton 2 \\
+\hline
+{\em bouton\+\_\+3} & état du bouton 3 \\
+\hline
+{\em bouton\+\_\+4} & état du bouton 4 \\
+\hline
+{\em classeselection} & la classe selectionnée \\
+\hline
+{\em ANAIS} & tableau de save \\
+\hline
+{\em TOONS} & tableau de point \\
+\hline
+{\em TOLGA} & arbre kd \\
+\hline
+{\em accu} & nombre de point \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_addb48b2e8edf3d2598eba897f5b521cf}\label{fonction_8h_addb48b2e8edf3d2598eba897f5b521cf} 
+\index{fonction.h@{fonction.h}!chargement\_fichier\_point@{chargement\_fichier\_point}}
+\index{chargement\_fichier\_point@{chargement\_fichier\_point}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fichier\_point()}{chargement\_fichier\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} chargement\+\_\+fichier\+\_\+point (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{int \texorpdfstring{$\ast$}{*}}]{accu }\end{DoxyParamCaption})}
+
+
+
+Charge un fichier et renvoie un tableau de point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier à charger \\
+\hline
+{\em accu} & nombre de point dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*}
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier à charger \\
+\hline
+{\em accu} & nombre de point dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{fonction_8h_a679e5bf04f8ec3bde83eba475763f3ee}\label{fonction_8h_a679e5bf04f8ec3bde83eba475763f3ee} 
+\index{fonction.h@{fonction.h}!classe\_changement@{classe\_changement}}
+\index{classe\_changement@{classe\_changement}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{classe\_changement()}{classe\_changement()}}
+{\footnotesize\ttfamily void classe\+\_\+changement (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{classe }\end{DoxyParamCaption})}
+
+
+
+Permet de changer la classe selectionnée (entre 1 et 2) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe} & classe à changer\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe} & classe à changer \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_ad4c3882624b63447a0069897d0a2b1b8}\label{fonction_8h_ad4c3882624b63447a0069897d0a2b1b8} 
+\index{fonction.h@{fonction.h}!k\_changement@{k\_changement}}
+\index{k\_changement@{k\_changement}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{k\_changement()}{k\_changement()}}
+{\footnotesize\ttfamily void k\+\_\+changement (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{kselection }\end{DoxyParamCaption})}
+
+
+
+Permet de changer le nombre de voisins proches. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kselection} & la valeur de k qui va changer\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em kselection} & la valeur de k qui va changer \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_a8eda120a3e093367ad943ebd4f4793a5}\label{fonction_8h_a8eda120a3e093367ad943ebd4f4793a5} 
+\index{fonction.h@{fonction.h}!mode\_crea@{mode\_crea}}
+\index{mode\_crea@{mode\_crea}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{mode\_crea()}{mode\_crea()}}
+{\footnotesize\ttfamily void mode\+\_\+crea (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nomfichier,  }\item[{int \texorpdfstring{$\ast$}{*}}]{classeselection }\end{DoxyParamCaption})}
+
+
+
+Interface graphique pour le mode creation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomfichier} & nom du fichier si il y a chargement \\
+\hline
+{\em classeselection} & la classe selectionné\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em nomfichier} & nom du fichier si il y a chargement \\
+\hline
+{\em classeselection} & la classe selectionné \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_ae44616c5504441880d598b8043ec1193}\label{fonction_8h_ae44616c5504441880d598b8043ec1193} 
+\index{fonction.h@{fonction.h}!selection\_on\_off@{selection\_on\_off}}
+\index{selection\_on\_off@{selection\_on\_off}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{selection\_on\_off()}{selection\_on\_off()}}
+{\footnotesize\ttfamily void selection\+\_\+on\+\_\+off (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{mode,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Permet de changer l\textquotesingle{}état d\textquotesingle{}un bouton. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & état du bouton \\
+\hline
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & état du bouton \\
+\hline
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_ae38d2df17e7a9c2c4b4db75623415c7f}\label{fonction_8h_ae38d2df17e7a9c2c4b4db75623415c7f} 
+\index{fonction.h@{fonction.h}!supprimer\_dernier\_point@{supprimer\_dernier\_point}}
+\index{supprimer\_dernier\_point@{supprimer\_dernier\_point}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{supprimer\_dernier\_point()}{supprimer\_dernier\_point()}}
+{\footnotesize\ttfamily void supprimer\+\_\+dernier\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}}]{sauvegarde }\end{DoxyParamCaption})}
+
+
+
+Permet de supprimer le dernier point et de faire l\textquotesingle{}affichage sans. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nombre de point \\
+\hline
+{\em sauvegarde} & tableau contenant les points\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & nombre de point \\
+\hline
+{\em sauvegarde} & tableau contenant les points \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_a4b2b8df23968d664f4cd65c454f1639a}\label{fonction_8h_a4b2b8df23968d664f4cd65c454f1639a} 
+\index{fonction.h@{fonction.h}!update\_classe@{update\_classe}}
+\index{update\_classe@{update\_classe}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{update\_classe()}{update\_classe()}}
+{\footnotesize\ttfamily void update\+\_\+classe (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{classeselection }\end{DoxyParamCaption})}
+
+
+
+Affichage de la classe selectionnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classeselection} & la classe actuelle\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em classeselection} & la classe actuelle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{fonction_8h_a365186cbf4585aabeffcfcd0718c2992}\label{fonction_8h_a365186cbf4585aabeffcfcd0718c2992} 
+\index{fonction.h@{fonction.h}!update\_k@{update\_k}}
+\index{update\_k@{update\_k}!fonction.h@{fonction.h}}
+\doxysubsubsection{\texorpdfstring{update\_k()}{update\_k()}}
+{\footnotesize\ttfamily void update\+\_\+k (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{kselection }\end{DoxyParamCaption})}
+
+
+
+Affichage de la valeur de k. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kselection} & le k actuel\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em kselection} & le k actuel. \\
+\hline
+\end{DoxyParams}

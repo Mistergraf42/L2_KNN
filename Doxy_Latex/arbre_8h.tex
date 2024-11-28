@@ -1,0 +1,472 @@
+\doxysection{heads/arbre.h File Reference}
+\hypertarget{arbre_8h}{}\label{arbre_8h}\index{heads/arbre.h@{heads/arbre.h}}
+
+
+Fichier contenant le prototype des fonctions.  
+
+
+{\ttfamily \#include \"{}type.\+h\"{}}\newline
+{\ttfamily \#include \"{}zone.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{arbre_8h_aca1b15797e0f520765fb5006c7f6e5dd}{arbre\+\_\+vide\+\_\+kd}} ()
+\begin{DoxyCompactList}\small\item\em Permet de créer un arbre vide. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{arbre_8h_a422c9dfb339212b1e854adf4b1d7afb1}{est\+\_\+vide\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Permet de verifier si un arbre est vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{arbre_8h_a3d6a73ae30dbf9c4e222a307e37f926f}{creer\+\_\+point}} (int classe, float x, float y)
+\begin{DoxyCompactList}\small\item\em Cette fonction permet de crée un point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{arbre_8h_a35c488ffd3c99d38eacea999bd5d481c}{creer\+\_\+arbre\+\_\+kd}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em Permet de créer un arbre kd ayant pour valeur le point p. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{arbre_8h_a0d3c39f37ba6862e92d55b0d93659a92}{comp\+Point}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p1, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p2)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de comparer deux points. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{arbre_8h_af478a4e6ae910b846d4fb75b52b3364a}{inserer\+\_\+aux}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p, int profondeur)
+\begin{DoxyCompactList}\small\item\em Fonction recursive permettant d\textquotesingle{}insérer un point dans un arbre kd, elle est appelée par la fonction inserer. Elle permet de parcourir l\textquotesingle{}arbre et de trouver la bonne place pour le point en fonction de sa valeur x et y.\+La profondeur de l\textquotesingle{}arbre est utilisé pour savoir si on doit comparer la valeur x ou y du point avec la valeur x ou y du noeud. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{arbre_8h_a38f962fbbedd686a1277b7c0a7a14337}{inserer}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em La fonction inserer fait appel à la fonction inserer\+\_\+aux pour insérer un point dans un arbre kd, elle permet de verifier si l\textquotesingle{}arbre est vide et si c\textquotesingle{}est le cas elle crée un arbre kd avec le point p comme valeur. Sinon elle fait appel à la fonction inserer\+\_\+aux. Elle definit une zone initial si l\textquotesingle{}arbre est vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{arbre_8h_a6525c6ff844b2445d4f4a8ff26682325}{chargement\+\_\+fich}} (char \texorpdfstring{$\ast$}{*}name, int \texorpdfstring{$\ast$}{*}nb\+\_\+noeud)
+\begin{DoxyCompactList}\small\item\em Elle permet de créer un arbre kd à partir d\textquotesingle{}un fichier. Elle lit le fichier et crée un point avec les valeurs lues. Elle crée un arbre kd avec le premier point lu et ensuite elle insère les autres points dans l\textquotesingle{}arbre kd. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{arbre_8h_a80adf00eab3b1245cab3c55985edbcf8}{profondeur\+\_\+noeud\+\_\+kd}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}val)
+\begin{DoxyCompactList}\small\item\em Elle nous permet de connaître la profondeur de notre noeur dans l\textquotesingle{}arbre kd. Elle fait appel à elle même recursivement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \mbox{\hyperlink{arbre_8h_a555feafd1cb291d72bc6cf29d85e99de}{supprimer}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p)
+\begin{DoxyCompactList}\small\item\em La fonction supprimer permet de supprimer un point de l\textquotesingle{}arbre kd. Elle fait appel à la fonction profondeur\+\_\+noeud\+\_\+kd pour connaître la profondeur du point dans l\textquotesingle{}arbre kd. Elle parcourt l\textquotesingle{}arbre kd jusqu\textquotesingle{}à trouver le point à supprimer. Elle fait appel à la fonction comp\+Point pour comparer le point courant avec le point à supprimer. Si le point est trouvé elle le supprime et retourne l\textquotesingle{}arbre kd. Sinon elle affiche un message d\textquotesingle{}erreur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{arbre_8h_a79062c394fde9afb58b2eaaa7d7520f5}{estfeuille\+\_\+kd}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a)
+\begin{DoxyCompactList}\small\item\em Permet de savoir si un noeud est une feuille. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{arbre_8h_a7f15b7938b9c28e93bddb957a4ae2ece}{rechercher\+\_\+aux}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}ppv, int k, int profondeur)
+\begin{DoxyCompactList}\small\item\em La fonction rechecher\+\_\+aux est la plus complexe de la partie arbre, elle utilise les axes pour parcourir l\textquotesingle{}arbre kd et trouver les plus proches voisins. Elle fait appel à la fonction maj\+\_\+liste pour mettre à jour la liste des plus proches voisins. Elle fait appel à elle même recursivement pour voir si dans un sous arbre il n\textquotesingle{}y a pas de plus proche voisin. Elle compare la distance entre le point et le plus proche voisin avec la distance entre le point et l\textquotesingle{}axe pour savoir si elle doit parcourir le sous arbre gauche ou droit. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{arbre_8h_a779872743aec5f548c6096ea7ecb42e8}{rechercher}} (\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} a, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p, int k)
+\begin{DoxyCompactList}\small\item\em Fonction permettant de trouver les voisins les plus proches du point p. Elle fait appel à la fonction rechercher\+\_\+aux. Elle crée une liste de k points et la retourne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichier contenant le prototype des fonctions. 
+
+\begin{DoxyAuthor}{Author}
+ANAIS ROCHE -\/ TOLGA YILDIZ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{arbre_8h_aca1b15797e0f520765fb5006c7f6e5dd}\label{arbre_8h_aca1b15797e0f520765fb5006c7f6e5dd} 
+\index{arbre.h@{arbre.h}!arbre\_vide\_kd@{arbre\_vide\_kd}}
+\index{arbre\_vide\_kd@{arbre\_vide\_kd}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{arbre\_vide\_kd()}{arbre\_vide\_kd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} arbre\+\_\+vide\+\_\+kd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Permet de créer un arbre vide. 
+
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+
+
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a6525c6ff844b2445d4f4a8ff26682325}\label{arbre_8h_a6525c6ff844b2445d4f4a8ff26682325} 
+\index{arbre.h@{arbre.h}!chargement\_fich@{chargement\_fich}}
+\index{chargement\_fich@{chargement\_fich}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{chargement\_fich()}{chargement\_fich()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} chargement\+\_\+fich (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{int \texorpdfstring{$\ast$}{*}}]{nb\+\_\+noeud }\end{DoxyParamCaption})}
+
+
+
+Elle permet de créer un arbre kd à partir d\textquotesingle{}un fichier. Elle lit le fichier et crée un point avec les valeurs lues. Elle crée un arbre kd avec le premier point lu et ensuite elle insère les autres points dans l\textquotesingle{}arbre kd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier \\
+\hline
+{\em nb\+\_\+noeud} & nombre de noeud dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier \\
+\hline
+{\em nb\+\_\+noeud} & nombre de noeud dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a0d3c39f37ba6862e92d55b0d93659a92}\label{arbre_8h_a0d3c39f37ba6862e92d55b0d93659a92} 
+\index{arbre.h@{arbre.h}!compPoint@{compPoint}}
+\index{compPoint@{compPoint}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{compPoint()}{compPoint()}}
+{\footnotesize\ttfamily int comp\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p1,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de comparer deux points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a35c488ffd3c99d38eacea999bd5d481c}\label{arbre_8h_a35c488ffd3c99d38eacea999bd5d481c} 
+\index{arbre.h@{arbre.h}!creer\_arbre\_kd@{creer\_arbre\_kd}}
+\index{creer\_arbre\_kd@{creer\_arbre\_kd}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{creer\_arbre\_kd()}{creer\_arbre\_kd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} creer\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+Permet de créer un arbre kd ayant pour valeur le point p. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & le point qui sera la valeur du noeud \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & le points qui sera la valeur du noeud \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a3d6a73ae30dbf9c4e222a307e37f926f}\label{arbre_8h_a3d6a73ae30dbf9c4e222a307e37f926f} 
+\index{arbre.h@{arbre.h}!creer\_point@{creer\_point}}
+\index{creer\_point@{creer\_point}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{creer\_point()}{creer\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} creer\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{classe,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Cette fonction permet de crée un point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe} & la classe du point \\
+\hline
+{\em x} & ça coordonnée x \\
+\hline
+{\em y} & ça coordonnée y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*}
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em classe} & la classe du point \\
+\hline
+{\em x} & ça coordonnée x \\
+\hline
+{\em y} & ça coordonnée y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a422c9dfb339212b1e854adf4b1d7afb1}\label{arbre_8h_a422c9dfb339212b1e854adf4b1d7afb1} 
+\index{arbre.h@{arbre.h}!est\_vide\_arbre\_kd@{est\_vide\_arbre\_kd}}
+\index{est\_vide\_arbre\_kd@{est\_vide\_arbre\_kd}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{est\_vide\_arbre\_kd()}{est\_vide\_arbre\_kd()}}
+{\footnotesize\ttfamily int est\+\_\+vide\+\_\+arbre\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Permet de verifier si un arbre est vide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & qui est un arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & qui est un arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a79062c394fde9afb58b2eaaa7d7520f5}\label{arbre_8h_a79062c394fde9afb58b2eaaa7d7520f5} 
+\index{arbre.h@{arbre.h}!estfeuille\_kd@{estfeuille\_kd}}
+\index{estfeuille\_kd@{estfeuille\_kd}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{estfeuille\_kd()}{estfeuille\_kd()}}
+{\footnotesize\ttfamily int estfeuille\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Permet de savoir si un noeud est une feuille. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a38f962fbbedd686a1277b7c0a7a14337}\label{arbre_8h_a38f962fbbedd686a1277b7c0a7a14337} 
+\index{arbre.h@{arbre.h}!inserer@{inserer}}
+\index{inserer@{inserer}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{inserer()}{inserer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} inserer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+La fonction inserer fait appel à la fonction inserer\+\_\+aux pour insérer un point dans un arbre kd, elle permet de verifier si l\textquotesingle{}arbre est vide et si c\textquotesingle{}est le cas elle crée un arbre kd avec le point p comme valeur. Sinon elle fait appel à la fonction inserer\+\_\+aux. Elle definit une zone initial si l\textquotesingle{}arbre est vide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre où nous voullons insérer le point \\
+\hline
+{\em p} & le point que nous voulons insérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre où nous voullons insérer le point \\
+\hline
+{\em p} & le point que nous voulons insérer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_af478a4e6ae910b846d4fb75b52b3364a}\label{arbre_8h_af478a4e6ae910b846d4fb75b52b3364a} 
+\index{arbre.h@{arbre.h}!inserer\_aux@{inserer\_aux}}
+\index{inserer\_aux@{inserer\_aux}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{inserer\_aux()}{inserer\_aux()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} inserer\+\_\+aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{int}]{profondeur }\end{DoxyParamCaption})}
+
+
+
+Fonction recursive permettant d\textquotesingle{}insérer un point dans un arbre kd, elle est appelée par la fonction inserer. Elle permet de parcourir l\textquotesingle{}arbre et de trouver la bonne place pour le point en fonction de sa valeur x et y.\+La profondeur de l\textquotesingle{}arbre est utilisé pour savoir si on doit comparer la valeur x ou y du point avec la valeur x ou y du noeud. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd où nous allons insérer le point \\
+\hline
+{\em p} & le point que nous voulons insérer \\
+\hline
+{\em profondeur} & la profondeur de l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd où nous allons insérer le point \\
+\hline
+{\em p} & le point que nous voulons insérer \\
+\hline
+{\em profondeur} & la profondeur de l\textquotesingle{}arbre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a80adf00eab3b1245cab3c55985edbcf8}\label{arbre_8h_a80adf00eab3b1245cab3c55985edbcf8} 
+\index{arbre.h@{arbre.h}!profondeur\_noeud\_kd@{profondeur\_noeud\_kd}}
+\index{profondeur\_noeud\_kd@{profondeur\_noeud\_kd}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{profondeur\_noeud\_kd()}{profondeur\_noeud\_kd()}}
+{\footnotesize\ttfamily int profondeur\+\_\+noeud\+\_\+kd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{val }\end{DoxyParamCaption})}
+
+
+
+Elle nous permet de connaître la profondeur de notre noeur dans l\textquotesingle{}arbre kd. Elle fait appel à elle même recursivement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd \\
+\hline
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd \\
+\hline
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a779872743aec5f548c6096ea7ecb42e8}\label{arbre_8h_a779872743aec5f548c6096ea7ecb42e8} 
+\index{arbre.h@{arbre.h}!rechercher@{rechercher}}
+\index{rechercher@{rechercher}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{rechercher()}{rechercher()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} rechercher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Fonction permettant de trouver les voisins les plus proches du point p. Elle fait appel à la fonction rechercher\+\_\+aux. Elle crée une liste de k points et la retourne. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & l\textquotesingle{}arbre kd où nous cherchons les plus proches voisins \\
+\hline
+{\em p} & le point dont nous voulons connaître les plus proches voisins \\
+\hline
+{\em k} & nombre de voisins voulus par l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*}
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & l\textquotesingle{}arbre kd où nous cherchons les plus proches voisins \\
+\hline
+{\em p} & le point dont nous voulons connaître les plus proches voisins \\
+\hline
+{\em k} & nombre de voisins voulus par l\textquotesingle{}utilisateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a7f15b7938b9c28e93bddb957a4ae2ece}\label{arbre_8h_a7f15b7938b9c28e93bddb957a4ae2ece} 
+\index{arbre.h@{arbre.h}!rechercher\_aux@{rechercher\_aux}}
+\index{rechercher\_aux@{rechercher\_aux}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{rechercher\_aux()}{rechercher\_aux()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} rechercher\+\_\+aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{ppv,  }\item[{int}]{k,  }\item[{int}]{profondeur }\end{DoxyParamCaption})}
+
+
+
+La fonction rechecher\+\_\+aux est la plus complexe de la partie arbre, elle utilise les axes pour parcourir l\textquotesingle{}arbre kd et trouver les plus proches voisins. Elle fait appel à la fonction maj\+\_\+liste pour mettre à jour la liste des plus proches voisins. Elle fait appel à elle même recursivement pour voir si dans un sous arbre il n\textquotesingle{}y a pas de plus proche voisin. Elle compare la distance entre le point et le plus proche voisin avec la distance entre le point et l\textquotesingle{}axe pour savoir si elle doit parcourir le sous arbre gauche ou droit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & l\textquotesingle{}arbre kd où nous cherchons les plus proches voisins \\
+\hline
+{\em p} & le point dont nous voulons connaître les plus proches voisins \\
+\hline
+{\em ppv} & la liste temporaire des plus proches voisins et qui sera la liste finale \\
+\hline
+{\em k} & nombre de k plus proches voisins voulus par l\textquotesingle{}utilisateur \\
+\hline
+{\em profondeur} & la profondeur de l\textquotesingle{}arbre kd \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*}
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & l\textquotesingle{}arbre kd où nous cherchons les plus proches voisins \\
+\hline
+{\em p} & le point dont nous voulons connaître les plus proches voisins \\
+\hline
+{\em ppv} & la liste temporaire des plus proches voisins et qui sera la liste finale \\
+\hline
+{\em k} & nombre de k plus proches voisins voulus par l\textquotesingle{}utilisateur \\
+\hline
+{\em profondeur} & la profondeur de l\textquotesingle{}arbre kd \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{arbre_8h_a555feafd1cb291d72bc6cf29d85e99de}\label{arbre_8h_a555feafd1cb291d72bc6cf29d85e99de} 
+\index{arbre.h@{arbre.h}!supprimer@{supprimer}}
+\index{supprimer@{supprimer}!arbre.h@{arbre.h}}
+\doxysubsubsection{\texorpdfstring{supprimer()}{supprimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} supprimer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}}}]{a,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p }\end{DoxyParamCaption})}
+
+
+
+La fonction supprimer permet de supprimer un point de l\textquotesingle{}arbre kd. Elle fait appel à la fonction profondeur\+\_\+noeud\+\_\+kd pour connaître la profondeur du point dans l\textquotesingle{}arbre kd. Elle parcourt l\textquotesingle{}arbre kd jusqu\textquotesingle{}à trouver le point à supprimer. Elle fait appel à la fonction comp\+Point pour comparer le point courant avec le point à supprimer. Si le point est trouvé elle le supprime et retourne l\textquotesingle{}arbre kd. Sinon elle affiche un message d\textquotesingle{}erreur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd \\
+\hline
+{\em p} & point à supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & arbre kd \\
+\hline
+{\em p} & point à supprimer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+arbre\+\_\+kd 
+\end{DoxyReturn}

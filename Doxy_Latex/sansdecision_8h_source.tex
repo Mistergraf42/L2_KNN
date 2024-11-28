@@ -1,0 +1,71 @@
+\doxysection{sansdecision.\+h}
+\hypertarget{sansdecision_8h_source}{}\label{sansdecision_8h_source}\index{heads/sansdecision.h@{heads/sansdecision.h}}
+\mbox{\hyperlink{sansdecision_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ \_SANSDECISION\_H\_}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ \_SANSDECISION\_H\_}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00023\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{sansdecision_8h_ab980973e0108a99193667f41b5f7bf0e}{distance\_points}}(\mbox{\hyperlink{structpoint}{point}}\ p1,\ \mbox{\hyperlink{structpoint}{point}}\ p2);}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sansdecision_8h_ac0efb98ec3e981a60427671c79999ef5}{distance\_save}}(\mbox{\hyperlink{structpoint}{point}}\ p1,\ \mbox{\hyperlink{structpoint}{point}}\ p2);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_acefb16bc373176aec17b847d3dcde3dd}{convert\_save\_to\_point}}(\mbox{\hyperlink{structsave}{save}}\ *saves,\ \textcolor{keywordtype}{int}\ n,\ \mbox{\hyperlink{structpoint}{point}}\ *pts);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{sansdecision_8h_a8edabe3ba1ca48662437306b076f14bc}{distance\_float}}(\textcolor{keywordtype}{float}\ p1x,\ \textcolor{keywordtype}{float}\ p1y,\ \textcolor{keywordtype}{float}\ p2x,\ \textcolor{keywordtype}{float}\ p2y);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_a978acfc4e3bfde09b99a0e9677eb1e46}{tableau\_pour\_k}}(\mbox{\hyperlink{structpoint}{point}}\ *tableau,\ \textcolor{keywordtype}{int}\ n,\ \mbox{\hyperlink{structpoint}{point}}\ k,\ \mbox{\hyperlink{structpoint__k}{point\_k}}\ **TAB\_K);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_a8f2d9b70f8dd13b204d6af2a3efb879f}{tableau\_pour\_k\_sp}}(\mbox{\hyperlink{structpoint}{point}}\ *tableau,\ \textcolor{keywordtype}{int}\ n,\ \mbox{\hyperlink{structpoint__k}{point\_k}}\ **TAB\_K,\ \textcolor{keywordtype}{int}\ xx,\ \textcolor{keywordtype}{int}\ yy);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_ab9a8c15a7abc2ae907a6545c2e1106d4}{trier\_ktab}}(\mbox{\hyperlink{structpoint__k}{point\_k}}\ *ktab,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_a9b260ba2bb54cfb24a6071308eb96354}{plus\_proche\_colorer}}(\mbox{\hyperlink{structpoint__k}{point\_k}}\ *ktab,\ \textcolor{keywordtype}{int}\ NB);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_ac4df48eab55b41525120477257862383}{plus\_proche\_colorer\_arbre}}(\mbox{\hyperlink{structpoint}{point}}\ *arbre\_tab,\ \textcolor{keywordtype}{int}\ NB);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_a877faeebfd1084ceb3d21609cfb6cd44}{tri\_fusion\_aux}}(\mbox{\hyperlink{structpoint__k}{point\_k}}*\ ktab,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_ac76b6b4966993c45fd31764ef86c13f0}{tri\_fusion}}(\mbox{\hyperlink{structpoint__k}{point\_k}}*\ ktab,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ r);}
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_aea5cfa73633297596df28c149681147b}{fusion\_deux\_fonction\_ktab}}(\mbox{\hyperlink{structpoint__k}{point\_k}}\ *ktab,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00139\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sansdecision_8h_a06a5f5bbc54f1a2cb3bf34cf2b4c34b2}{classe\_majoritaire}}(\mbox{\hyperlink{structpoint__k}{point\_k}}\ *ktab,\ \textcolor{keywordtype}{int}\ NB);}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00149\ \mbox{\hyperlink{structpoint}{point}}\ \mbox{\hyperlink{sansdecision_8h_a8e3d80c6b476018e8bdc03f63e093900}{est\_plus\_loins\_arbre}}(\mbox{\hyperlink{structpoint}{point}}\ p\ ,\mbox{\hyperlink{structpoint}{point}}\ *liste,\textcolor{keywordtype}{int}\ nb\_ppv);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00158\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_ac485195b997210fd9bcaa1d67fec3e03}{dessiner\_cercle}}(\textcolor{keywordtype}{int}\ *x,\ \textcolor{keywordtype}{int}\ *y,\ \textcolor{keywordtype}{int}\ diametre);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00167\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_a1f72cd5356360a8e03603ff3fcecc41d}{cree\_points}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ classe);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00179\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sansdecision_8h_a83c18349d9b994278d0321b09107888e}{distance\_INT}}(\textcolor{keywordtype}{int}\ x1,\ \textcolor{keywordtype}{int}\ y1,\ \textcolor{keywordtype}{int}\ x2,\ \textcolor{keywordtype}{int}\ y2);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00189\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sansdecision_8h_a7d7a159e1e93b1f300f1b213d4eaedf3}{dessiner\_cercle\_bis}}(\textcolor{keywordtype}{int}\ *x,\ \textcolor{keywordtype}{int}\ *y,\textcolor{keywordtype}{float}\ xx,\textcolor{keywordtype}{float}\ yy\ );}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ }
+\DoxyCodeLine{00196\ }
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ }
+\DoxyCodeLine{00206\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\_SANSDECISION\_H\_*/}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,642 @@
+\doxysection{heads/sansdecision.h File Reference}
+\hypertarget{sansdecision_8h}{}\label{sansdecision_8h}\index{heads/sansdecision.h@{heads/sansdecision.h}}
+
+
+Fichier contenant le prototype des fonctions.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{sansdecision_8h_ab980973e0108a99193667f41b5f7bf0e}{distance\+\_\+points}} (\mbox{\hyperlink{structpoint}{point}} p1, \mbox{\hyperlink{structpoint}{point}} p2)
+\begin{DoxyCompactList}\small\item\em Calcul la distance euclidienne entre deux points. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sansdecision_8h_ac0efb98ec3e981a60427671c79999ef5}{distance\+\_\+save}} (\mbox{\hyperlink{structpoint}{point}} p1, \mbox{\hyperlink{structpoint}{point}} p2)
+\begin{DoxyCompactList}\small\item\em Calcul la distance euclidienne entre deux points en pixel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_acefb16bc373176aec17b847d3dcde3dd}{convert\+\_\+save\+\_\+to\+\_\+point}} (\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}saves, int n, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}pts)
+\begin{DoxyCompactList}\small\item\em Conversion de notre tableau de kppv. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{sansdecision_8h_a8edabe3ba1ca48662437306b076f14bc}{distance\+\_\+float}} (float p1x, float p1y, float p2x, float p2y)
+\begin{DoxyCompactList}\small\item\em Calcul la distance euclidienne pour float. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_a978acfc4e3bfde09b99a0e9677eb1e46}{tableau\+\_\+pour\+\_\+k}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}tableau, int n, \mbox{\hyperlink{structpoint}{point}} k, \mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}TAB\+\_\+K)
+\begin{DoxyCompactList}\small\item\em Permet de calculer la distance euclidienne entre deux points et la met dans un tableau de \doxylink{structpoint__k}{point\+\_\+k}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_a8f2d9b70f8dd13b204d6af2a3efb879f}{tableau\+\_\+pour\+\_\+k\+\_\+sp}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}tableau, int n, \mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}TAB\+\_\+K, int xx, int yy)
+\begin{DoxyCompactList}\small\item\em Permet de remplir un tableau de \doxylink{structpoint__k}{point\+\_\+k} avec les distances euclidiennes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_ab9a8c15a7abc2ae907a6545c2e1106d4}{trier\+\_\+ktab}} (\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}ktab, int n)
+\begin{DoxyCompactList}\small\item\em Tri le tableau de \doxylink{structpoint__k}{point\+\_\+k} par ordre croissant, en utilisant le tri à bulle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_a9b260ba2bb54cfb24a6071308eb96354}{plus\+\_\+proche\+\_\+colorer}} (\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}ktab, int NB)
+\begin{DoxyCompactList}\small\item\em Met en jaune les points les plus proches du point cliqué en fonction des classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_ac4df48eab55b41525120477257862383}{plus\+\_\+proche\+\_\+colorer\+\_\+arbre}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}arbre\+\_\+tab, int NB)
+\begin{DoxyCompactList}\small\item\em Permet de colorer les points les plus proches du point cliqué en fonction des classes en utilisant la version arbre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_a877faeebfd1084ceb3d21609cfb6cd44}{tri\+\_\+fusion\+\_\+aux}} (\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}ktab, int l, int m, int r)
+\begin{DoxyCompactList}\small\item\em TRI FUSION algorithme de tri. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_ac76b6b4966993c45fd31764ef86c13f0}{tri\+\_\+fusion}} (\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}ktab, int l, int r)
+\begin{DoxyCompactList}\small\item\em TRI FUSION algorithme de tri. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_aea5cfa73633297596df28c149681147b}{fusion\+\_\+deux\+\_\+fonction\+\_\+ktab}} (\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}ktab, int n)
+\begin{DoxyCompactList}\small\item\em Permet de trier le tableau de \doxylink{structpoint__k}{point\+\_\+k} par ordre croissant et de colorer les points les plus proches du point cliqué en fonction des classes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sansdecision_8h_a06a5f5bbc54f1a2cb3bf34cf2b4c34b2}{classe\+\_\+majoritaire}} (\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}ktab, int NB)
+\begin{DoxyCompactList}\small\item\em Trouve la classe majoritaire qui sont les plus proches du point cliqué \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \mbox{\hyperlink{sansdecision_8h_a8e3d80c6b476018e8bdc03f63e093900}{est\+\_\+plus\+\_\+loins\+\_\+arbre}} (\mbox{\hyperlink{structpoint}{point}} p, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}liste, int nb\+\_\+ppv)
+\begin{DoxyCompactList}\small\item\em Trouver le point le plus éloigné d\textquotesingle{}un point spécifique dans une liste de points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_ac485195b997210fd9bcaa1d67fec3e03}{dessiner\+\_\+cercle}} (int \texorpdfstring{$\ast$}{*}x, int \texorpdfstring{$\ast$}{*}y, int diametre)
+\begin{DoxyCompactList}\small\item\em Dessine un cercle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_a1f72cd5356360a8e03603ff3fcecc41d}{cree\+\_\+points}} (int x, int y, int classe)
+\begin{DoxyCompactList}\small\item\em il crée les points en fonction de leur classe \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sansdecision_8h_a83c18349d9b994278d0321b09107888e}{distance\+\_\+\+INT}} (int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Fait la distance entre 2 x et 2 y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sansdecision_8h_a7d7a159e1e93b1f300f1b213d4eaedf3}{dessiner\+\_\+cercle\+\_\+bis}} (int \texorpdfstring{$\ast$}{*}x, int \texorpdfstring{$\ast$}{*}y, float xx, float yy)
+\begin{DoxyCompactList}\small\item\em Dessiner un cercle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichier contenant le prototype des fonctions. 
+
+\begin{DoxyAuthor}{Author}
+ANAIS ROCHE -\/ TOLGA YILDIZ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sansdecision_8h_a06a5f5bbc54f1a2cb3bf34cf2b4c34b2}\label{sansdecision_8h_a06a5f5bbc54f1a2cb3bf34cf2b4c34b2} 
+\index{sansdecision.h@{sansdecision.h}!classe\_majoritaire@{classe\_majoritaire}}
+\index{classe\_majoritaire@{classe\_majoritaire}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{classe\_majoritaire()}{classe\_majoritaire()}}
+{\footnotesize\ttfamily int classe\+\_\+majoritaire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}}]{ktab,  }\item[{int}]{NB }\end{DoxyParamCaption})}
+
+
+
+Trouve la classe majoritaire qui sont les plus proches du point cliqué 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em NB} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em NB} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{sansdecision_8h_acefb16bc373176aec17b847d3dcde3dd}\label{sansdecision_8h_acefb16bc373176aec17b847d3dcde3dd} 
+\index{sansdecision.h@{sansdecision.h}!convert\_save\_to\_point@{convert\_save\_to\_point}}
+\index{convert\_save\_to\_point@{convert\_save\_to\_point}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{convert\_save\_to\_point()}{convert\_save\_to\_point()}}
+{\footnotesize\ttfamily void convert\+\_\+save\+\_\+to\+\_\+point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}}]{saves,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{pts }\end{DoxyParamCaption})}
+
+
+
+Conversion de notre tableau de kppv. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saves} & tableau de save \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em pts} & tableau de points\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em saves} & tableau de save \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em pts} & tableau de points \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a1f72cd5356360a8e03603ff3fcecc41d}\label{sansdecision_8h_a1f72cd5356360a8e03603ff3fcecc41d} 
+\index{sansdecision.h@{sansdecision.h}!cree\_points@{cree\_points}}
+\index{cree\_points@{cree\_points}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{cree\_points()}{cree\_points()}}
+{\footnotesize\ttfamily void cree\+\_\+points (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{classe }\end{DoxyParamCaption})}
+
+
+
+il crée les points en fonction de leur classe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+{\em classe} & classe du point\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+{\em classe} & classe du point \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_ac485195b997210fd9bcaa1d67fec3e03}\label{sansdecision_8h_ac485195b997210fd9bcaa1d67fec3e03} 
+\index{sansdecision.h@{sansdecision.h}!dessiner\_cercle@{dessiner\_cercle}}
+\index{dessiner\_cercle@{dessiner\_cercle}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{dessiner\_cercle()}{dessiner\_cercle()}}
+{\footnotesize\ttfamily void dessiner\+\_\+cercle (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{x,  }\item[{int \texorpdfstring{$\ast$}{*}}]{y,  }\item[{int}]{diametre }\end{DoxyParamCaption})}
+
+
+
+Dessine un cercle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+{\em diametre} & diamètre du cercle\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+{\em diametre} & diamètre du cercle \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a7d7a159e1e93b1f300f1b213d4eaedf3}\label{sansdecision_8h_a7d7a159e1e93b1f300f1b213d4eaedf3} 
+\index{sansdecision.h@{sansdecision.h}!dessiner\_cercle\_bis@{dessiner\_cercle\_bis}}
+\index{dessiner\_cercle\_bis@{dessiner\_cercle\_bis}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{dessiner\_cercle\_bis()}{dessiner\_cercle\_bis()}}
+{\footnotesize\ttfamily void dessiner\+\_\+cercle\+\_\+bis (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{x,  }\item[{int \texorpdfstring{$\ast$}{*}}]{y,  }\item[{float}]{xx,  }\item[{float}]{yy }\end{DoxyParamCaption})}
+
+
+
+Dessiner un cercle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+{\em xx} & coordonnée float x \\
+\hline
+{\em yy} & coordonnée float y\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & coordonnée x \\
+\hline
+{\em y} & coordonnée y \\
+\hline
+{\em xx} & coordonnée float x \\
+\hline
+{\em yy} & coordonnée float y \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a8edabe3ba1ca48662437306b076f14bc}\label{sansdecision_8h_a8edabe3ba1ca48662437306b076f14bc} 
+\index{sansdecision.h@{sansdecision.h}!distance\_float@{distance\_float}}
+\index{distance\_float@{distance\_float}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{distance\_float()}{distance\_float()}}
+{\footnotesize\ttfamily float distance\+\_\+float (\begin{DoxyParamCaption}\item[{float}]{p1x,  }\item[{float}]{p1y,  }\item[{float}]{p2x,  }\item[{float}]{p2y }\end{DoxyParamCaption})}
+
+
+
+Calcul la distance euclidienne pour float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1x} & coordonnée x du premier point \\
+\hline
+{\em p1y} & coordonnée y du premier point \\
+\hline
+{\em p2x} & coordonnée x du second point \\
+\hline
+{\em p2y} & coordonnée y du second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1x} & coordonnée x du premier point \\
+\hline
+{\em p1y} & coordonnée y du premier point \\
+\hline
+{\em p2x} & coordonnée x du second point \\
+\hline
+{\em p2y} & coordonnée y du second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{sansdecision_8h_a83c18349d9b994278d0321b09107888e}\label{sansdecision_8h_a83c18349d9b994278d0321b09107888e} 
+\index{sansdecision.h@{sansdecision.h}!distance\_INT@{distance\_INT}}
+\index{distance\_INT@{distance\_INT}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{distance\_INT()}{distance\_INT()}}
+{\footnotesize\ttfamily int distance\+\_\+\+INT (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Fait la distance entre 2 x et 2 y. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & premier x \\
+\hline
+{\em y1} & premier y \\
+\hline
+{\em x2} & premier x \\
+\hline
+{\em y2} & premier y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & premier x \\
+\hline
+{\em y1} & premier y \\
+\hline
+{\em x2} & premier x \\
+\hline
+{\em y2} & premier y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{sansdecision_8h_ab980973e0108a99193667f41b5f7bf0e}\label{sansdecision_8h_ab980973e0108a99193667f41b5f7bf0e} 
+\index{sansdecision.h@{sansdecision.h}!distance\_points@{distance\_points}}
+\index{distance\_points@{distance\_points}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{distance\_points()}{distance\_points()}}
+{\footnotesize\ttfamily float distance\+\_\+points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p1,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Calcul la distance euclidienne entre deux points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{sansdecision_8h_ac0efb98ec3e981a60427671c79999ef5}\label{sansdecision_8h_ac0efb98ec3e981a60427671c79999ef5} 
+\index{sansdecision.h@{sansdecision.h}!distance\_save@{distance\_save}}
+\index{distance\_save@{distance\_save}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{distance\_save()}{distance\_save()}}
+{\footnotesize\ttfamily int distance\+\_\+save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p1,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Calcul la distance euclidienne entre deux points en pixel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{sansdecision_8h_a8e3d80c6b476018e8bdc03f63e093900}\label{sansdecision_8h_a8e3d80c6b476018e8bdc03f63e093900} 
+\index{sansdecision.h@{sansdecision.h}!est\_plus\_loins\_arbre@{est\_plus\_loins\_arbre}}
+\index{est\_plus\_loins\_arbre@{est\_plus\_loins\_arbre}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{est\_plus\_loins\_arbre()}{est\_plus\_loins\_arbre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} est\+\_\+plus\+\_\+loins\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{liste,  }\item[{int}]{nb\+\_\+ppv }\end{DoxyParamCaption})}
+
+
+
+Trouver le point le plus éloigné d\textquotesingle{}un point spécifique dans une liste de points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & point \\
+\hline
+{\em liste} & liste de points a parcourir \\
+\hline
+{\em nb\+\_\+ppv} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & point \\
+\hline
+{\em liste} & liste de points a parcourir \\
+\hline
+{\em nb\+\_\+ppv} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point 
+\end{DoxyReturn}
+\Hypertarget{sansdecision_8h_aea5cfa73633297596df28c149681147b}\label{sansdecision_8h_aea5cfa73633297596df28c149681147b} 
+\index{sansdecision.h@{sansdecision.h}!fusion\_deux\_fonction\_ktab@{fusion\_deux\_fonction\_ktab}}
+\index{fusion\_deux\_fonction\_ktab@{fusion\_deux\_fonction\_ktab}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{fusion\_deux\_fonction\_ktab()}{fusion\_deux\_fonction\_ktab()}}
+{\footnotesize\ttfamily void fusion\+\_\+deux\+\_\+fonction\+\_\+ktab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}}]{ktab,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Permet de trier le tableau de \doxylink{structpoint__k}{point\+\_\+k} par ordre croissant et de colorer les points les plus proches du point cliqué en fonction des classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em n} & nombre de kppv\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em n} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a9b260ba2bb54cfb24a6071308eb96354}\label{sansdecision_8h_a9b260ba2bb54cfb24a6071308eb96354} 
+\index{sansdecision.h@{sansdecision.h}!plus\_proche\_colorer@{plus\_proche\_colorer}}
+\index{plus\_proche\_colorer@{plus\_proche\_colorer}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{plus\_proche\_colorer()}{plus\_proche\_colorer()}}
+{\footnotesize\ttfamily void plus\+\_\+proche\+\_\+colorer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}}]{ktab,  }\item[{int}]{NB }\end{DoxyParamCaption})}
+
+
+
+Met en jaune les points les plus proches du point cliqué en fonction des classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & le tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em NB} & nombre de kppv\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & le tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em NB} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_ac4df48eab55b41525120477257862383}\label{sansdecision_8h_ac4df48eab55b41525120477257862383} 
+\index{sansdecision.h@{sansdecision.h}!plus\_proche\_colorer\_arbre@{plus\_proche\_colorer\_arbre}}
+\index{plus\_proche\_colorer\_arbre@{plus\_proche\_colorer\_arbre}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{plus\_proche\_colorer\_arbre()}{plus\_proche\_colorer\_arbre()}}
+{\footnotesize\ttfamily void plus\+\_\+proche\+\_\+colorer\+\_\+arbre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{arbre\+\_\+tab,  }\item[{int}]{NB }\end{DoxyParamCaption})}
+
+
+
+Permet de colorer les points les plus proches du point cliqué en fonction des classes en utilisant la version arbre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre\+\_\+tab} & arbre de points \\
+\hline
+{\em NB} & nombre de kppv\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em arbre\+\_\+tab} & arbre de points \\
+\hline
+{\em NB} & nombre de kppv \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a978acfc4e3bfde09b99a0e9677eb1e46}\label{sansdecision_8h_a978acfc4e3bfde09b99a0e9677eb1e46} 
+\index{sansdecision.h@{sansdecision.h}!tableau\_pour\_k@{tableau\_pour\_k}}
+\index{tableau\_pour\_k@{tableau\_pour\_k}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{tableau\_pour\_k()}{tableau\_pour\_k()}}
+{\footnotesize\ttfamily void tableau\+\_\+pour\+\_\+k (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{tableau,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{k,  }\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{TAB\+\_\+K }\end{DoxyParamCaption})}
+
+
+
+Permet de calculer la distance euclidienne entre deux points et la met dans un tableau de \doxylink{structpoint__k}{point\+\_\+k}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & tableau de points \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em k} & point k pour la distance euclidienne \\
+\hline
+{\em TAB\+\_\+K} & le tableau de \doxylink{structpoint__k}{point\+\_\+k} avec les distances euclidiennes\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & tableau de points \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em k} & point k pour la distance euclidienne \\
+\hline
+{\em TAB\+\_\+K} & le tableau de \doxylink{structpoint__k}{point\+\_\+k} avec les distances euclidiennes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a8f2d9b70f8dd13b204d6af2a3efb879f}\label{sansdecision_8h_a8f2d9b70f8dd13b204d6af2a3efb879f} 
+\index{sansdecision.h@{sansdecision.h}!tableau\_pour\_k\_sp@{tableau\_pour\_k\_sp}}
+\index{tableau\_pour\_k\_sp@{tableau\_pour\_k\_sp}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{tableau\_pour\_k\_sp()}{tableau\_pour\_k\_sp()}}
+{\footnotesize\ttfamily void tableau\+\_\+pour\+\_\+k\+\_\+sp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{tableau,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{TAB\+\_\+K,  }\item[{int}]{xx,  }\item[{int}]{yy }\end{DoxyParamCaption})}
+
+
+
+Permet de remplir un tableau de \doxylink{structpoint__k}{point\+\_\+k} avec les distances euclidiennes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & tableau de points \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em TAB\+\_\+K} & tableau de \doxylink{structpoint__k}{point\+\_\+k} avec les distances euclidiennes \\
+\hline
+{\em xx} & point pixel x \\
+\hline
+{\em yy} & point pixel y\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em tableau} & tableau de points \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em TAB\+\_\+K} & tableau de \doxylink{structpoint__k}{point\+\_\+k} avec les distances euclidiennes \\
+\hline
+{\em xx} & point pixel x \\
+\hline
+{\em yy} & point pixel y \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_ac76b6b4966993c45fd31764ef86c13f0}\label{sansdecision_8h_ac76b6b4966993c45fd31764ef86c13f0} 
+\index{sansdecision.h@{sansdecision.h}!tri\_fusion@{tri\_fusion}}
+\index{tri\_fusion@{tri\_fusion}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{tri\_fusion()}{tri\_fusion()}}
+{\footnotesize\ttfamily void tri\+\_\+fusion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}}]{ktab,  }\item[{int}]{l,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+TRI FUSION algorithme de tri. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em l} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+TRI FUSION algorithme de tri.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em l} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_a877faeebfd1084ceb3d21609cfb6cd44}\label{sansdecision_8h_a877faeebfd1084ceb3d21609cfb6cd44} 
+\index{sansdecision.h@{sansdecision.h}!tri\_fusion\_aux@{tri\_fusion\_aux}}
+\index{tri\_fusion\_aux@{tri\_fusion\_aux}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{tri\_fusion\_aux()}{tri\_fusion\_aux()}}
+{\footnotesize\ttfamily void tri\+\_\+fusion\+\_\+aux (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}}]{ktab,  }\item[{int}]{l,  }\item[{int}]{m,  }\item[{int}]{r }\end{DoxyParamCaption})}
+
+
+
+TRI FUSION algorithme de tri. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em l} & \\
+\hline
+{\em m} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & tableau de \doxylink{structpoint__k}{point\+\_\+k} \\
+\hline
+{\em l} & \\
+\hline
+{\em m} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sansdecision_8h_ab9a8c15a7abc2ae907a6545c2e1106d4}\label{sansdecision_8h_ab9a8c15a7abc2ae907a6545c2e1106d4} 
+\index{sansdecision.h@{sansdecision.h}!trier\_ktab@{trier\_ktab}}
+\index{trier\_ktab@{trier\_ktab}!sansdecision.h@{sansdecision.h}}
+\doxysubsubsection{\texorpdfstring{trier\_ktab()}{trier\_ktab()}}
+{\footnotesize\ttfamily void trier\+\_\+ktab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}}]{ktab,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Tri le tableau de \doxylink{structpoint__k}{point\+\_\+k} par ordre croissant, en utilisant le tri à bulle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & le tableau de \doxylink{structpoint__k}{point\+\_\+k} a trier \\
+\hline
+{\em n} & nombre de points\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em ktab} & le tableau de \doxylink{structpoint__k}{point\+\_\+k} a trier \\
+\hline
+{\em n} & nombre de points \\
+\hline
+\end{DoxyParams}

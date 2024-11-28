@@ -1,0 +1,95 @@
+\doxysection{sources/menu.c File Reference}
+\hypertarget{menu_8c}{}\label{menu_8c}\index{sources/menu.c@{sources/menu.c}}
+
+
+Permet de gerer toutes la partie graphique.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$MLV/\+MLV\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include \"{}../heads/type.\+h\"{}}\newline
+{\ttfamily \#include \"{}../heads/conversion.\+h\"{}}\newline
+{\ttfamily \#include \"{}../heads/sansdecision.\+h\"{}}\newline
+{\ttfamily \#include \"{}../heads/fonction.\+h\"{}}\newline
+{\ttfamily \#include \"{}../heads/arbre.\+h\"{}}\newline
+{\ttfamily \#include \"{}../heads/zone.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8c_a13c4b4f9421a63b5f3949f12e3ef0feb}{option\+\_\+bouton}} (int \texorpdfstring{$\ast$}{*}x, int \texorpdfstring{$\ast$}{*}y, int \texorpdfstring{$\ast$}{*}bouton\+\_\+1, int \texorpdfstring{$\ast$}{*}bouton\+\_\+2, int \texorpdfstring{$\ast$}{*}bouton\+\_\+3, int \texorpdfstring{$\ast$}{*}bouton\+\_\+4, char \texorpdfstring{$\ast$}{*}nomfichier, int \texorpdfstring{$\ast$}{*}classeselection, int \texorpdfstring{$\ast$}{*}kselection, \mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}sauvegarde, int \texorpdfstring{$\ast$}{*}accu, FILE \texorpdfstring{$\ast$}{*}fichier, int \texorpdfstring{$\ast$}{*}MODE, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}TOONS, \mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}TAB\+\_\+K, int \texorpdfstring{$\ast$}{*}POINT\+\_\+\+NOIR, \mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \texorpdfstring{$\ast$}{*}TOLGA, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}dernier, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}ajoute\+\_\+classe\+\_\+selection, int \texorpdfstring{$\ast$}{*}supprimer\+\_\+pts)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de gérer toute la partie graphique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Permet de gerer toutes la partie graphique. 
+
+\begin{DoxyAuthor}{Author}
+ANAIS ROCHE -\/ TOLGA YILDIZ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{menu_8c_a13c4b4f9421a63b5f3949f12e3ef0feb}\label{menu_8c_a13c4b4f9421a63b5f3949f12e3ef0feb} 
+\index{menu.c@{menu.c}!option\_bouton@{option\_bouton}}
+\index{option\_bouton@{option\_bouton}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{option\_bouton()}{option\_bouton()}}
+{\footnotesize\ttfamily void option\+\_\+bouton (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{x,  }\item[{int \texorpdfstring{$\ast$}{*}}]{y,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+1,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+2,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+3,  }\item[{int \texorpdfstring{$\ast$}{*}}]{bouton\+\_\+4,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nomfichier,  }\item[{int \texorpdfstring{$\ast$}{*}}]{classeselection,  }\item[{int \texorpdfstring{$\ast$}{*}}]{kselection,  }\item[{\mbox{\hyperlink{structsave}{save}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{sauvegarde,  }\item[{int \texorpdfstring{$\ast$}{*}}]{accu,  }\item[{FILE \texorpdfstring{$\ast$}{*}}]{fichier,  }\item[{int \texorpdfstring{$\ast$}{*}}]{MODE,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{TOONS,  }\item[{\mbox{\hyperlink{structpoint__k}{point\+\_\+k}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{TAB\+\_\+K,  }\item[{int \texorpdfstring{$\ast$}{*}}]{POINT\+\_\+\+NOIR,  }\item[{\mbox{\hyperlink{type_8h_afcb23d336f41dc89cd6c4fcbeb8ec081}{arbre\+\_\+kd}} \texorpdfstring{$\ast$}{*}}]{TOLGA,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{dernier,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{ajoute\+\_\+classe\+\_\+selection,  }\item[{int \texorpdfstring{$\ast$}{*}}]{supprimer\+\_\+pts }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet de gérer toute la partie graphique. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & variable qui récupère la position en x de la souris \\
+\hline
+{\em y} & variable qui récupère la position en y de la souris \\
+\hline
+{\em bouton\+\_\+1} & valeur du bouton 1 \\
+\hline
+{\em bouton\+\_\+2} & valeur du bouton 2 \\
+\hline
+{\em bouton\+\_\+3} & valeur du bouton 3 \\
+\hline
+{\em bouton\+\_\+4} & valeur du bouton 4 \\
+\hline
+{\em nomfichier} & fichier pour les sauvegardes ou chargement \\
+\hline
+{\em classeselection} & classe selectionnée \\
+\hline
+{\em kselection} & k selectionné \\
+\hline
+{\em sauvegarde} & tableau de type save qui contient les points \\
+\hline
+{\em accu} & nombre de points \\
+\hline
+{\em fichier} & fichier servant à la sauvegarde \\
+\hline
+{\em MODE} & mode kppv ou creation \\
+\hline
+{\em TOONS} & tableau de type point qui contient les points \\
+\hline
+{\em TAB\+\_\+K} & tableau de type \doxylink{structpoint__k}{point\+\_\+k} qui contient les points avec les distances euclidiennes \\
+\hline
+{\em POINT\+\_\+\+NOIR} & Permet de savoir si on a cliqué sur un point ou non \\
+\hline
+{\em TOLGA} & arbre kd \\
+\hline
+{\em dernier} & dernier point cliqué en mode création \\
+\hline
+{\em ajoute\+\_\+classe\+\_\+selection} & permet de stocker les valeurs du point en mode Kppv avec prise de décision \\
+\hline
+{\em supprimer\+\_\+pts} & vérifie si on a supprimer le dernier point \\
+\hline
+\end{DoxyParams}

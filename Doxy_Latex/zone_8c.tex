@@ -1,0 +1,195 @@
+\doxysection{sources/zone.c File Reference}
+\hypertarget{zone_8c}{}\label{zone_8c}\index{sources/zone.c@{sources/zone.c}}
+
+
+permet de gerer les zones.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \"{}../heads/type.\+h\"{}}\newline
+{\ttfamily \#include \"{}../heads/arbre.\+h\"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{zone_8c_a4435183f1573c761a3481737ba321c74}{distance\+\_\+euc}} (\mbox{\hyperlink{structpoint}{point}} p1, \mbox{\hyperlink{structpoint}{point}} p2)
+\begin{DoxyCompactList}\small\item\em Fait la distance euclidienne entre deux points. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{zone_8c_a3c2e3cfcb06ab57a3c302b8b8d8bdd14}{distance\+\_\+zone}} (\mbox{\hyperlink{structzone}{zone}} z, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Fait la distance euclidienne entre un point et une zone. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{zone_8c_a986f79710e10092d411426d869d9d7cc}{distance\+\_\+max}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}ppv, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p, int k)
+\begin{DoxyCompactList}\small\item\em Recherche la distance max entre un point et un tableau de point pour un k donné. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{zone_8c_a2436defbc9e716481f9e4bb9c5d2cb70}{est\+\_\+point\+\_\+dans\+\_\+zone}} (\mbox{\hyperlink{structzone}{zone}} z, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Vérifie si un point est dans une zone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{zone_8c_a008ec2e5a4326d1374ce3baeac15548c}{point\+\_\+proche\+\_\+dans\+\_\+zone}} (\mbox{\hyperlink{structzone}{zone}} z, \mbox{\hyperlink{structpoint}{point}} p)
+\begin{DoxyCompactList}\small\item\em Trouve le point le plus proche d\textquotesingle{}un point dans une zone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{zone_8c_a038d1dae276ae9b0eddd5874f1ebe577}{maj\+\_\+liste}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p\+\_\+tmp, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}p\+Rech, \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}liste, int nb\+\_\+ppv)
+\begin{DoxyCompactList}\small\item\em Mettre à jour la liste des plus proches voisins. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{zone_8c_a48135164a7440cd4e0eb0432e24224b8}{trouver\+\_\+classe}} (\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}liste, int nb\+\_\+ppv)
+\begin{DoxyCompactList}\small\item\em Trouve la classe majoritaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+permet de gerer les zones. 
+
+\begin{DoxyAuthor}{Author}
+ANAIS ROCHE -\/ YILDIZ TOLGA 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{zone_8c_a4435183f1573c761a3481737ba321c74}\label{zone_8c_a4435183f1573c761a3481737ba321c74} 
+\index{zone.c@{zone.c}!distance\_euc@{distance\_euc}}
+\index{distance\_euc@{distance\_euc}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{distance\_euc()}{distance\_euc()}}
+{\footnotesize\ttfamily float distance\+\_\+euc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}}}]{p1,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Fait la distance euclidienne entre deux points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & premier point \\
+\hline
+{\em p2} & deuxième point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{zone_8c_a986f79710e10092d411426d869d9d7cc}\label{zone_8c_a986f79710e10092d411426d869d9d7cc} 
+\index{zone.c@{zone.c}!distance\_max@{distance\_max}}
+\index{distance\_max@{distance\_max}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{distance\_max()}{distance\_max()}}
+{\footnotesize\ttfamily float distance\+\_\+max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{ppv,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+Recherche la distance max entre un point et un tableau de point pour un k donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ppv} & tableau de point contenant les k plus proches voisins \\
+\hline
+{\em p} & point de cliquer \\
+\hline
+{\em k} & nombre de plus proches voisins choisi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{zone_8c_a3c2e3cfcb06ab57a3c302b8b8d8bdd14}\label{zone_8c_a3c2e3cfcb06ab57a3c302b8b8d8bdd14} 
+\index{zone.c@{zone.c}!distance\_zone@{distance\_zone}}
+\index{distance\_zone@{distance\_zone}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{distance\_zone()}{distance\_zone()}}
+{\footnotesize\ttfamily float distance\+\_\+zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structzone}{zone}}}]{z,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Fait la distance euclidienne entre un point et une zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & zone \\
+\hline
+{\em p} & point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{zone_8c_a2436defbc9e716481f9e4bb9c5d2cb70}\label{zone_8c_a2436defbc9e716481f9e4bb9c5d2cb70} 
+\index{zone.c@{zone.c}!est\_point\_dans\_zone@{est\_point\_dans\_zone}}
+\index{est\_point\_dans\_zone@{est\_point\_dans\_zone}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{est\_point\_dans\_zone()}{est\_point\_dans\_zone()}}
+{\footnotesize\ttfamily int est\+\_\+point\+\_\+dans\+\_\+zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structzone}{zone}}}]{z,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Vérifie si un point est dans une zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & la zone \\
+\hline
+{\em p} & le point dont on veut vérifier l\textquotesingle{}appartenance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{zone_8c_a038d1dae276ae9b0eddd5874f1ebe577}\label{zone_8c_a038d1dae276ae9b0eddd5874f1ebe577} 
+\index{zone.c@{zone.c}!maj\_liste@{maj\_liste}}
+\index{maj\_liste@{maj\_liste}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{maj\_liste()}{maj\_liste()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} maj\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p\+\_\+tmp,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{p\+Rech,  }\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{liste,  }\item[{int}]{nb\+\_\+ppv }\end{DoxyParamCaption})}
+
+
+
+Mettre à jour la liste des plus proches voisins. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+tmp} & point que l\textquotesingle{}ont veut ajouter ou non dans la liste des k-\/ppv \\
+\hline
+{\em p\+Rech} & point de recherche \\
+\hline
+{\em liste} & liste des plus proches voisins \\
+\hline
+{\em nb\+\_\+ppv} & nombre de plus proches voisins \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{zone_8c_a008ec2e5a4326d1374ce3baeac15548c}\label{zone_8c_a008ec2e5a4326d1374ce3baeac15548c} 
+\index{zone.c@{zone.c}!point\_proche\_dans\_zone@{point\_proche\_dans\_zone}}
+\index{point\_proche\_dans\_zone@{point\_proche\_dans\_zone}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{point\_proche\_dans\_zone()}{point\_proche\_dans\_zone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*} point\+\_\+proche\+\_\+dans\+\_\+zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structzone}{zone}}}]{z,  }\item[{\mbox{\hyperlink{structpoint}{point}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Trouve le point le plus proche d\textquotesingle{}un point dans une zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & zone où il peut y avoir le point le plus proche \\
+\hline
+{\em p} & point à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+point\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{zone_8c_a48135164a7440cd4e0eb0432e24224b8}\label{zone_8c_a48135164a7440cd4e0eb0432e24224b8} 
+\index{zone.c@{zone.c}!trouver\_classe@{trouver\_classe}}
+\index{trouver\_classe@{trouver\_classe}!zone.c@{zone.c}}
+\doxysubsubsection{\texorpdfstring{trouver\_classe()}{trouver\_classe()}}
+{\footnotesize\ttfamily int trouver\+\_\+classe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpoint}{point}} \texorpdfstring{$\ast$}{*}}]{liste,  }\item[{int}]{nb\+\_\+ppv }\end{DoxyParamCaption})}
+
+
+
+Trouve la classe majoritaire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liste} & liste des plus proches voisins \\
+\hline
+{\em nb\+\_\+ppv} & nombre de plus proches voisins \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

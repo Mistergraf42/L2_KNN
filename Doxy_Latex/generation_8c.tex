@@ -1,0 +1,78 @@
+\doxysection{sources/generation.c File Reference}
+\hypertarget{generation_8c}{}\label{generation_8c}\index{sources/generation.c@{sources/generation.c}}
+
+
+fonction de génération de données.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{generation_8c_a13463776e115d1dad4971858db7c42da}{frand\+\_\+a\+\_\+b}} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Permet de générer des floats aléatoires. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{generation_8c_a5f0000d77b9705a887476e0eb9ecc5f7}{creation}} (char \texorpdfstring{$\ast$}{*}name, int n, int d, int c)
+\begin{DoxyCompactList}\small\item\em Permet de créer un fichier de données. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+fonction de génération de données. 
+
+\begin{DoxyAuthor}{Author}
+ANAIS ROCHE -\/ TOLGA YILDIZ 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{generation_8c_a5f0000d77b9705a887476e0eb9ecc5f7}\label{generation_8c_a5f0000d77b9705a887476e0eb9ecc5f7} 
+\index{generation.c@{generation.c}!creation@{creation}}
+\index{creation@{creation}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{creation()}{creation()}}
+{\footnotesize\ttfamily void creation (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{name,  }\item[{int}]{n,  }\item[{int}]{d,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Permet de créer un fichier de données. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & nom du fichier où seront stockées les données \\
+\hline
+{\em n} & nombre de points \\
+\hline
+{\em d} & dimension fixée à 2 \\
+\hline
+{\em c} & classes max \\
+\hline
+\end{DoxyParams}
+\Hypertarget{generation_8c_a13463776e115d1dad4971858db7c42da}\label{generation_8c_a13463776e115d1dad4971858db7c42da} 
+\index{generation.c@{generation.c}!frand\_a\_b@{frand\_a\_b}}
+\index{frand\_a\_b@{frand\_a\_b}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{frand\_a\_b()}{frand\_a\_b()}}
+{\footnotesize\ttfamily double frand\+\_\+a\+\_\+b (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{b }\end{DoxyParamCaption})}
+
+
+
+Permet de générer des floats aléatoires. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & valeur min \\
+\hline
+{\em b} & valeur max \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
